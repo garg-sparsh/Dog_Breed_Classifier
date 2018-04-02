@@ -23,7 +23,7 @@ for breed in breeds:
 
 for dogs_breed in breeds:
     dogs = glob.glob('%s/*'%dogs_breed)
-    test_dogs = dogs[:10]
+    test_dogs = dogs[:50]
     for test_dog in test_dogs:
         shutil.move(test_dog, 'test/%s'%str(test_dog.split('/')[1]))
 
